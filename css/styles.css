@@ -251,7 +251,7 @@ header .logo {
 }
 
 .team .team_card .team_text {
-  font-size: 16px;
+  font-size: calc(12px + 0.2083333333vw);
 }
 
 .team .team_card .team_text p:first-child {
@@ -353,6 +353,44 @@ footer .footer__contacts a {
 footer .sections-slogans {
   padding-top: 30px;
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .team .vl {
+    border-left: 35px solid #19B1DE;
+    border-left: calc(35px + 1.0416666667vw) solid #19B1DE;
+  }
+
+  .team .team_card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .team .team_card .team_text {
+    height: 42px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .team .team_card .team_text p:first-child {
+    margin-bottom: 5px;
+  }
+
+  .team .team_card img {
+    width: calc(100px + 1.5625vw);
+    height: calc(100px + 1.5625vw);
+    border-radius: 50%;
+    background: #19B1DE;
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 590px) {
