@@ -202,10 +202,11 @@ header .logo {
 
 .about .about_mission p:last-child {
   margin: 90px 0 0;
+  color: #19B1DE;
 }
 
 .about .about_us img {
-  width: 692px;
+  width: 100%;
 }
 
 .about .about_us p:nth-child(2) {
@@ -390,6 +391,17 @@ footer .sections-slogans {
     border-radius: 50%;
     background: #19B1DE;
     margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .about_mission:after,
+  .about .about_mission .description:after {
+    display: none;
+  }
+
+  .about .about_mission p:last-child {
+    margin: 30px 0 40px;
   }
 }
 
