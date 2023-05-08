@@ -47,11 +47,12 @@ let checkBtns = () => {
     position = 0;
   }
 };
-// let withTeamSection = document.documentElement.clientHeight;
+let withTeamSection = document.documentElement.clientHeight;
 let elem = document.getElementById('team')
 
 function equating() {
   elem.style.width = withTeamSection + "px";
+  // `${withTeamSection}px`;
 }
 
 equating();
