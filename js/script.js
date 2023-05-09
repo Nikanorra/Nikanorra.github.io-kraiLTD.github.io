@@ -1,3 +1,4 @@
+new WOW().init();
 let position = 0;
 let slidesShow = 5;
 let slidesScroll = 1;

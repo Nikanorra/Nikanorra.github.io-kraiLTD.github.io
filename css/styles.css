@@ -404,6 +404,10 @@ footer .sections-slogans {
     margin: 30px 0 40px;
   }
 
+  .service .container.text-end {
+    text-align: center !important;
+  }
+
   .service form {
     left: 50%;
     -webkit-transform: translateX(-50%);
