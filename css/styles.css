@@ -419,6 +419,18 @@ header .logo {
   left: 20px;
 }
 
+.mission::after {
+  content: "";
+  border-bottom: #fff solid 1px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .mission .mission_pic {
   position: relative;
   height: 500px;
@@ -585,6 +597,7 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px;
   position: absolute;
   top: 0;
   left: 50px;
@@ -634,7 +647,7 @@ footer ul {
 }
 
 footer .row:first-child {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #273747;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
