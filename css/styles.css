@@ -394,7 +394,7 @@ header .logo {
 }
 
 .hero .logo {
-  height: 300px;
+  height: 450px;
   padding: 25px 0;
 }
 
@@ -413,6 +413,7 @@ header .logo {
   height: 35px;
   position: absolute;
   right: 20px;
+  z-index: 1;
 }
 
 .slider.center img.slick-prev.slick-arrow {
