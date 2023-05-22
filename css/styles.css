@@ -645,6 +645,10 @@ footer {
   background: #021528;
 }
 
+footer .description {
+  margin-bottom: 10px;
+}
+
 footer ul {
   padding-left: 0;
 }
@@ -688,16 +692,6 @@ footer .footer__link {
   border-right: 1px solid #fff;
   padding: 0 10px;
   margin: 0 10px;
-}
-
-footer .footer__contacts a {
-  display: block;
-  margin-bottom: 10px;
-}
-
-footer .sections-slogans {
-  padding-top: 30px;
-  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 992px) {
@@ -798,11 +792,6 @@ footer .sections-slogans {
 @media screen and (max-width: 590px) {
   footer img:first-child {
     width: 80px;
-  }
-
-  footer .sections-slogans {
-    margin-top: 0;
-    padding-top: 20px;
   }
 }
 
