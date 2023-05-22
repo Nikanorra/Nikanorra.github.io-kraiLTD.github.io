@@ -354,6 +354,10 @@ button.btn {
   border-radius: 1.3rem;
 }
 
+.dropdown-menu {
+  width: 100px;
+}
+
 /*
   ========================================
   HEADER
