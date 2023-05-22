@@ -298,7 +298,9 @@ body {
 }
 
 section {
+  min-height: 100vh;
   height: calc(100vh - 80px);
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,6 +701,37 @@ footer .sections-slogans {
 }
 
 @media screen and (max-width: 992px) {
+  .mission .mission_pic {
+    height: 450px;
+  }
+
+  .mission .mission_text .description a {
+    margin: 30px 0 0;
+    text-align: center;
+  }
+
+  .mission .mission_pic::before {
+    width: 250px;
+    height: 200px;
+    top: 100px;
+    left: 25px;
+  }
+
+  .mission .mission_pic img {
+    top: 120px;
+    height: 260px;
+    width: 260px;
+  }
+
+  .mission .mission_pic::after {
+    bottom: 85px;
+    right: 0;
+    width: 70%;
+    max-width: 250px;
+    height: 30px;
+    font-size: calc(12px + 0.2083333333vw);
+  }
+
   .team .vl {
     border-left: 35px solid #19B1DE;
     border-left: calc(35px + 1.0416666667vw) solid #19B1DE;
@@ -737,13 +770,13 @@ footer .sections-slogans {
 }
 
 @media screen and (max-width: 768px) {
-  .mission .mission_text:after,
-  .about .mission_text .description:after {
-    display: none;
+  .mission .mission_pic::before {
+    left: 0;
   }
 
-  .mission .mission_text p:last-child {
-    margin: 30px 0 40px;
+  .mission .mission_pic img {
+    left: 35px;
+    top: 130px;
   }
 
   .service .container.text-end {
@@ -785,5 +818,13 @@ footer .sections-slogans {
             transform: translateX(-50%);
     height: 200px;
     border-radius: 30px;
+  }
+
+  .technology form {
+    left: 0;
+    border-radius: 30px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
   }
 }
