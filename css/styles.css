@@ -321,6 +321,10 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -364,6 +368,10 @@ button.btn {
   ========================================
 */
 
+header {
+  background-color: #273747;
+}
+
 header img {
   width: 75px;
 }
@@ -402,6 +410,12 @@ header .logo {
 .hero .logo {
   height: 450px;
   padding: 25px 0;
+}
+
+.btn-group-lg > .btn,
+.btn-lg {
+  border-radius: 20px;
+  padding: 1rem 2rem;
 }
 
 .slider.center {
@@ -532,34 +546,27 @@ header .logo {
   font-weight: 900;
 }
 
-.team .container .wrapper .row {
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-}
-
-.team .vl {
-  border-left: 56px solid #19B1DE;
-  position: relative;
-  left: 0;
-  top: 0;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  height: 100%;
-}
-
-.team .vl h1 {
-  position: absolute;
-  top: 20%;
-  right: 0;
-}
-
-.team .team_card {
+.team .team_cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: pointer;
+}
+
+.team .team_card {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .team .team_card img {
@@ -567,15 +574,57 @@ header .logo {
   height: 130px;
   border-radius: 50%;
   background: #19B1DE;
-  margin-right: 40px;
+  margin-bottom: 20px;
 }
 
 .team .team_card .team_text {
   font-size: calc(12px + 0.2083333333vw);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .team .team_card .team_text p:first-child {
   font-weight: 900;
+}
+
+.team .team_card .team_text .team_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team .team_card .team_text .team_link p {
+  margin-right: 10px;
+}
+
+.team .team_card .team_text .team_link img {
+  height: 25px;
+  width: 25px;
+  background: transparent;
+}
+
+.team .team_card .team_text .team_visible {
+  margin-bottom: 0;
+}
+
+.team .team_card .team_text .team_hidden {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.team .team_card .team_text:hover .team_hidden {
+  opacity: 1;
 }
 
 .technology img {
@@ -639,6 +688,12 @@ header .logo {
           align-items: center;
 }
 
+.services .services_points:last-child {
+  font-size: calc(12px + 0.2083333333vw);
+  text-align: justify;
+  padding: 0 20px;
+}
+
 /*
   ========================================
   FOOTER
@@ -646,6 +701,7 @@ header .logo {
 */
 
 footer {
+  padding: 50px 0;
   background: #021528;
 }
 
@@ -698,6 +754,27 @@ footer .footer__link {
   margin: 0 10px;
 }
 
+footer .footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+footer .footer__contact img {
+  height: 20px;
+  width: 20px;
+  padding-top: 0;
+  margin: 2px 10px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .mission .mission_pic {
     height: 450px;
@@ -730,11 +807,6 @@ footer .footer__link {
     font-size: calc(12px + 0.2083333333vw);
   }
 
-  .team .vl {
-    border-left: 35px solid #19B1DE;
-    border-left: calc(35px + 1.0416666667vw) solid #19B1DE;
-  }
-
   .team .team_card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -751,19 +823,11 @@ footer .footer__link {
   .team .team_card .team_text {
     height: 42px;
     margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .team .team_card .team_text p:first-child {
-    margin-bottom: 5px;
   }
 
   .team .team_card img {
     width: calc(100px + 1.5625vw);
     height: calc(100px + 1.5625vw);
-    border-radius: 50%;
-    background: #19B1DE;
-    margin-right: 10px;
   }
 }
 
