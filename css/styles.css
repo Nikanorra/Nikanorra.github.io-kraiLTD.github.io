@@ -807,27 +807,23 @@ footer .footer__contact img {
     font-size: calc(12px + 0.2083333333vw);
   }
 
-  .team .team_card {
+  .team .team_cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
+
+  .team .team_card {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   .team .team_card .team_text {
-    height: 42px;
-    margin-bottom: 20px;
-  }
-
-  .team .team_card img {
-    width: calc(100px + 1.5625vw);
-    height: calc(100px + 1.5625vw);
+    text-align: left;
   }
 }
 
