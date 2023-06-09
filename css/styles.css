@@ -299,7 +299,7 @@ body {
 
 section {
   min-height: 100vh;
-  height: calc(100vh - 80px);
+  height: 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,6 +534,19 @@ header .logo {
   opacity: 0.7;
 }
 
+.about::after {
+  content: "";
+  border-bottom: #fff solid 1px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 150px 0;
+}
+
 .about .about_us img {
   width: 100%;
   height: 250px;
@@ -544,6 +557,10 @@ header .logo {
 
 .about .about_us p:nth-child(2) {
   font-weight: 900;
+}
+
+.team {
+  padding: 100px 0 20px 0;
 }
 
 .team .team_cards {
@@ -627,17 +644,6 @@ header .logo {
   opacity: 1;
 }
 
-.technology img {
-  max-height: 290px;
-  border-radius: 30px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.technology .service_form {
-  position: relative;
-}
-
 .technology form {
   background-color: #19B1DE;
   display: -webkit-box;
@@ -654,16 +660,12 @@ header .logo {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
-  position: absolute;
-  top: 0;
-  left: 50px;
   width: 310px;
-  height: 100%;
+  border-radius: 30px;
 }
 
-.technology form button.btn {
-  width: 80%;
-  height: 70px;
+.hs-form-6e45489e-eba6-48ec-ac55-73dd64857e4a_5b0d3edb-9cb8-4238-929b-86b440fe1779 .hs-button {
+  background: #19B1DE;
 }
 
 .services img {
@@ -768,6 +770,12 @@ footer .footer__contact img {
   margin: 2px 10px;
 }
 
+footer .footer__contact svg {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
@@ -836,48 +844,10 @@ footer .footer__contact img {
     left: 35px;
     top: 130px;
   }
-
-  .service .container.text-end {
-    text-align: center !important;
-  }
-
-  .service form {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-
-  .service form button.btn {
-    height: calc(40px + 1.5625vw);
-  }
 }
 
 @media screen and (max-width: 590px) {
   footer img:first-child {
     width: 80px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .service_form img {
-    visibility: hidden;
-  }
-
-  .service form {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    height: 200px;
-    border-radius: 30px;
-  }
-
-  .technology form {
-    left: 0;
-    border-radius: 30px;
-    padding: 20px;
-    width: 100%;
-    height: auto;
   }
 }
