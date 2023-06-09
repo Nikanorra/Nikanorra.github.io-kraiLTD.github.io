@@ -664,10 +664,6 @@ header .logo {
   border-radius: 30px;
 }
 
-.hs-form-6e45489e-eba6-48ec-ac55-73dd64857e4a_5b0d3edb-9cb8-4238-929b-86b440fe1779 .hs-button {
-  background: #19B1DE;
-}
-
 .services img {
   max-height: 200px;
   max-width: 200px;
@@ -828,10 +824,25 @@ footer .footer__contact svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 40px;
   }
 
   .team .team_card .team_text {
+    padding-left: 5%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     text-align: left;
+  }
+
+  .team .team_card .team_text p {
+    margin: 0;
+  }
+
+  .team .team_card .team_text .team_hidden {
+    opacity: 1;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -843,11 +854,5 @@ footer .footer__contact svg {
   .mission .mission_pic img {
     left: 35px;
     top: 130px;
-  }
-}
-
-@media screen and (max-width: 590px) {
-  footer img:first-child {
-    width: 80px;
   }
 }
