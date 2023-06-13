@@ -1,0 +1,110 @@
+.mission {
+  &::after {
+    content: "";
+    border-bottom: $color-wh solid 1px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .mission_pic {
+    position: relative;
+    height: 500px;
+    &::before {
+      content: "";
+      width: 400px;
+      height: 250px;
+      border-radius: 30px;
+      display: block;
+      background: $bg-slider;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      content: "KRAI's leadership team";
+      padding: 20px;
+      text-align: center;
+      width: 250px;
+      height: 100px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $bg-slider;
+      position: absolute;
+      z-index: 2;
+      bottom: 70px;
+      right: 20%;
+    }
+    img {
+      height: 400px;
+      width: 400px;
+      z-index: 1;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      background-color: $color-wh;
+      border-radius: 30px;
+    }
+  }
+  .mission_text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .description {
+      margin: 0;
+      a {
+        margin: 90px 0 0;
+        color: $blue;
+        display: inline-block;
+        transition: 0.3s;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+    
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mission .mission_pic {
+    height: 450px;
+}
+  .mission .mission_text .description a {
+    margin: 30px 0 0;
+    text-align: center;
+}
+  .mission .mission_pic::before {
+    width: 250px;
+    height: 200px;
+    top: 100px;
+    left: 25px;
+  }
+  .mission .mission_pic img {
+    top: 120px;
+    height: 260px;
+    width: 260px;
+  }
+  .mission .mission_pic::after {
+    bottom: 65px;
+    right: 0;
+    width: 70%; 
+    max-width: 250px;
+    height: 30px;
+    font-size: $font-sm;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mission .mission_pic::before {
+    left: 0;
+  }
+  .mission .mission_pic img {
+    left: 35px;
+    top: 130px;
+  }
+}

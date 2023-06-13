@@ -1,0 +1,35 @@
+ /*
+  ========================================
+  HEADER
+  ========================================
+*/
+header {
+  background-color: $bg-slider;
+  img {
+    width: 75px;
+  }
+  .logo {
+    width: 50px;
+    animation: rotation 1s;
+    padding-left: 20px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+
+
+@keyframes rotation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}

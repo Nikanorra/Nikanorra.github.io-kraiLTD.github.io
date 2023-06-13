@@ -1,0 +1,76 @@
+@import "slick.scss";
+@import "slick-theme.scss";
+@import "bySection/variable.scss";
+
+a {
+  text-decoration: none;
+  color: $color-wh;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  max-width: 100%;
+  min-width: 320px;
+  background-color: $bg-color;
+  color: $color-wh;
+  height: 100%;
+}
+section {
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 1 auto;
+  // padding: 50px 0 20px 0;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  min-width: 320px;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+// FONTS
+.title {
+  font-size: $font-xl;
+} 
+.description {
+  font-size: $font-ref;
+}
+
+// BUTTON
+.btn.btn-primary.btn-lg {
+  background-color: $blue;
+}
+button.btn {
+  border-radius: 1.3rem;
+}
+
+  // BOOTSTRAP
+  .dropdown-menu {
+    width: 100px;
+  }
+
+
+
+@import "bySection/00-header.scss";
+@import "bySection/hero.scss";
+@import "bySection/slider.scss";
+@import "bySection/mission.scss";
+@import "bySection/about.scss";
+@import "bySection/team.scss";
+@import "bySection/technology.scss";
+@import "bySection/services.scss";
+@import "bySection/news.scss";
+@import "bySection/00-footer.scss";
