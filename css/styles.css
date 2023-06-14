@@ -729,6 +729,12 @@ header .logo {
 .news_wrapp .news_details p {
   margin: 0;
   margin-bottom: 10px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.news_wrapp .news_details p:first-child {
+  height: 30px;
 }
 
 .news_wrapp button {
@@ -912,5 +918,29 @@ footer .footer__contact svg {
 @media screen and (max-width: 590px) {
   .footer_logo {
     height: 150px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .news_wrapp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .news_wrapp img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 30px;
+    height: auto;
+    width: 100%;
+  }
+
+  .news_wrapp button {
+    width: 90%;
+    margin: 0 auto;
   }
 }
