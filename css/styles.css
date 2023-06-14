@@ -463,18 +463,18 @@ header .logo {
   height: 250px;
   border-radius: 30px;
   display: block;
-  background: #19B1DE;
+  background: #273747;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .mission .mission_pic::after {
-  content: "Dr. Anton Lokhmotov";
+  content: "KRAI's leadership team";
   padding: 20px;
   text-align: center;
   width: 250px;
-  height: 90px;
+  height: 100px;
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,10 +485,10 @@ header .logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #19B1DE;
+  background: #273747;
   position: absolute;
   z-index: 2;
-  bottom: 90px;
+  bottom: 70px;
   right: 20%;
 }
 
@@ -692,6 +692,52 @@ header .logo {
   padding: 0 20px;
 }
 
+.news_wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #273747;
+  border-radius: 30px;
+  width: 100%;
+  height: 200px;
+  font-size: calc(12px + 0.2083333333vw);
+  margin-bottom: 30px;
+}
+
+.news_wrapp img {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 100%;
+  width: 250px;
+}
+
+.news_wrapp .news_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  margin: 0 20px;
+}
+
+.news_wrapp .news_details p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.news_wrapp button {
+  background-color: #19B1DE;
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 200px;
+}
+
 /*
   ========================================
   FOOTER
@@ -803,7 +849,7 @@ footer .footer__contact svg {
   }
 
   .mission .mission_pic::after {
-    bottom: 85px;
+    bottom: 65px;
     right: 0;
     width: 70%;
     max-width: 250px;
