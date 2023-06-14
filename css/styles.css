@@ -702,6 +702,15 @@ header .logo {
   height: 200px;
   font-size: calc(12px + 0.2083333333vw);
   margin-bottom: 30px;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.news_wrapp:hover {
+  color: #fff;
+  opacity: 0.8;
 }
 
 .news_wrapp img {
@@ -741,7 +750,16 @@ header .logo {
   background-color: #19B1DE;
   border-radius: 20px;
   padding: 10px 20px;
+  height: 50px;
   width: 200px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.news_wrapp button:hover {
+  font-size: calc(15px + 0.5208333333vw);
+  padding: 5px 20px;
 }
 
 /*
