@@ -3020,7 +3020,7 @@ $('.center').slick({
   prevArrow: '<img class="slick-next" src="img/arrow/arrow-next.png" alt="arrow right">',
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 3000,
   responsive: [
     {
       breakpoint: 768,

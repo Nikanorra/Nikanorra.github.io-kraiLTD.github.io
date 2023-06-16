@@ -470,7 +470,7 @@ header .logo {
 }
 
 .mission .mission_pic::after {
-  content: "KRAI's leadership team";
+  content: "KRAI's team";
   padding: 20px;
   text-align: center;
   width: 250px;
@@ -547,16 +547,19 @@ header .logo {
   padding: 150px 0;
 }
 
-.about .about_us img {
-  width: 100%;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 30px;
+.about .about_us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.about .about_us p:nth-child(2) {
-  font-weight: 900;
+.about .about_us img {
+  border-radius: 30px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .team {
@@ -936,6 +939,12 @@ footer .footer__contact svg {
 @media screen and (max-width: 590px) {
   .footer_logo {
     height: 150px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about .about_us img {
+    margin-left: 0;
   }
 }
 
