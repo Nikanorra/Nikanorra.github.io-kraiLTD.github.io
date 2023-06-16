@@ -345,6 +345,7 @@ img {
 .title {
   font-size: calc(25px + 1.3020833333vw);
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .description {
