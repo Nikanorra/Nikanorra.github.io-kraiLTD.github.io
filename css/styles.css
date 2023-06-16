@@ -352,6 +352,7 @@ img {
 
 .btn.btn-primary.btn-lg {
   background-color: #19B1DE;
+  border-color: transparent;
 }
 
 button.btn {
@@ -405,6 +406,10 @@ header .logo {
     -webkit-transform: rotateX(360deg);
             transform: rotateX(360deg);
   }
+}
+
+.hero .wrapper {
+  min-height: 65vh;
 }
 
 .hero .logo {
@@ -532,6 +537,10 @@ header .logo {
 
 .mission .mission_text .description a:hover {
   opacity: 0.7;
+}
+
+.about {
+  padding: 100px 0 20px 0;
 }
 
 .about::after {
@@ -663,8 +672,10 @@ header .logo {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
-  width: 310px;
+  max-width: 310px;
+  width: 100%;
   border-radius: 30px;
+  margin: 0 auto;
 }
 
 .services img {
@@ -693,6 +704,10 @@ header .logo {
   font-size: calc(12px + 0.2083333333vw);
   text-align: justify;
   padding: 0 20px;
+}
+
+.news {
+  padding: 100px 0 20px 0;
 }
 
 .news_wrapp {
@@ -928,6 +943,10 @@ footer .footer__contact svg {
     left: 35px;
     top: 130px;
   }
+
+  .services_points {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -946,9 +965,7 @@ footer .footer__contact svg {
   .about .about_us img {
     margin-left: 0;
   }
-}
 
-@media screen and (max-width: 550px) {
   .news_wrapp {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -956,6 +973,13 @@ footer .footer__contact svg {
             flex-direction: column;
     height: auto;
     padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .news_wrapp .news_details {
+    margin-top: 25px;
   }
 
   .news_wrapp img {
