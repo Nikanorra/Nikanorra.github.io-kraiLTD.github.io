@@ -1,4 +1,33 @@
-// new WOW().init();
+
+// let currentPage = document.location.href;
+// // let links = document.querySelectorAll('.navbar-nav a');
+
+// let el = document.querySelectorAll(".navbar-nav a");
+// window.addEventListener('load', () => {
+//   for (var i = 0; i < el.length; i++) {
+//     // debugger;
+//     if (el[i].getAttribute("href").indexOf(currentPage) > -1) {
+//       debugger;
+//       console.log(el[i]);
+//       el[i].classList.add("active");
+//       debugger;
+//     }
+//   }
+// });
+
+jQuery(function($) {
+  var path = window.location.href; 
+  // because the 'href' property of the DOM element is the absolute path
+  $('ul a').each(function() {
+    if (this.href === path) {
+      $(this).addClass('active');
+    } 
+    // else if (this.href == path) {
+    //   debugger;
+    //   $(this).addClass('active');
+    // }
+  });
+});;
 /*
      _ _      _       _
  ___| (_) ___| | __  (_)___
@@ -3040,12 +3069,13 @@ $('.center').slick({
     }
   ]
 });;
-// let withTeamSection = document.documentElement.clientHeight;
-let elem = document.getElementById('team')
+// // let withTeamSection = document.documentElement.clientHeight;
+// let elem = document.getElementById('team')
 
-function equating() {
-  elem.style.width = withTeamSection + "px";
-}
+// function equating() {
+//   elem.style.width = withTeamSection + "px";
+// }
 
-equating();
+// equating();
 ;
+
