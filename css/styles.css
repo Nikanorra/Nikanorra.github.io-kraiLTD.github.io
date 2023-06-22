@@ -412,7 +412,7 @@ header .logo {
 }
 
 .hero .wrapper {
-  height: calc(100vh - 290px);
+  min-height: calc(100vh - 290px);
 }
 
 .hero .logo {
