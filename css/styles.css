@@ -373,6 +373,7 @@ button.btn {
 
 header {
   background-color: #273747;
+  font-weight: bold;
 }
 
 header img {
@@ -411,7 +412,7 @@ header .logo {
 }
 
 .hero .wrapper {
-  min-height: 65vh;
+  height: calc(100vh - 290px);
 }
 
 .hero .logo {
@@ -427,12 +428,12 @@ header .logo {
 
 .slider.center {
   background-color: #273747;
-  height: 100px;
-  padding: 20px;
+  height: 77px;
+  padding: 10px;
 }
 
 .slider.center img {
-  height: 60px;
+  height: 57px;
 }
 
 .slider.center img.slick-arrow {
@@ -526,19 +527,6 @@ header .logo {
 
 .mission .mission_text .description {
   margin: 0;
-}
-
-.mission .mission_text .description a {
-  margin: 90px 0 0;
-  color: #19B1DE;
-  display: inline-block;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.mission .mission_text .description a:hover {
-  opacity: 0.7;
 }
 
 .about {
@@ -709,10 +697,10 @@ header .logo {
           align-items: center;
 }
 
-.services .services_points:last-child {
+.services .services_points p:last-child {
   font-size: calc(12px + 0.2083333333vw);
   text-align: justify;
-  padding: 0 20px;
+  padding: 20px 40px;
 }
 
 .news {
@@ -796,6 +784,7 @@ header .logo {
 */
 
 footer {
+  text-transform: capitalize;
   padding: 50px 0;
   background: #021528;
 }
@@ -814,13 +803,20 @@ footer .row:first-child {
   padding-bottom: 20px;
 }
 
-footer img {
-  width: 100px;
+footer .footer_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer_logo img {
+  width: calc(65px + 1.5625vw);
   padding-top: 20px;
 }
 
-footer img:first-child {
-  width: 120px;
+footer .footer_logo img:first-child {
+  width: calc(85px + 1.5625vw);
+  margin-right: 30px;
 }
 
 footer a {
@@ -871,8 +867,8 @@ footer .footer__contact svg {
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 2.2rem;
+    padding-left: 2.2rem;
   }
 }
 
@@ -941,6 +937,11 @@ footer .footer__contact svg {
     padding: 0;
     margin: 0;
   }
+
+  .services_points p:last-child {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -959,8 +960,11 @@ footer .footer__contact svg {
 }
 
 @media screen and (max-width: 767px) {
-  .footer_brand {
-    margin-bottom: 40px;
+  .footer_logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
