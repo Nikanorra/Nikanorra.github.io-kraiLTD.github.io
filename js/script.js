@@ -17,17 +17,44 @@
 
 jQuery(function($) {
   var path = window.location.href; 
+  var valueBeforeHash = path.split('#')[0];
   // because the 'href' property of the DOM element is the absolute path
   $('ul a').each(function() {
-    if (this.href === path) {
+
+    // $(this).removeClass('active');
+ 
+    let newHref = this.href.split('#')[0];
+    if (newHref === valueBeforeHash) {
+      // debugger;
       $(this).addClass('active');
     } 
-    // else if (this.href == path) {
-    //   debugger;
-    //   $(this).addClass('active');
+    // else {
+    //   alert(newHref);
     // }
   });
-});;
+});
+
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   debugger;
+//   var currentPage = window.location.pathname;
+//   var links = document.querySelectorAll('.navbar-nav .nav-link');
+
+//   for (var i = 0; i < links.length; i++) {
+//     var link = links[i];
+//     var href = link.getAttribute('href');
+
+//     if (href === currentPage) {
+//       link.classList.add('active');
+//       break;
+//     }
+//   }
+// });
+
+
+;
 /*
      _ _      _       _
  ___| (_) ___| | __  (_)___

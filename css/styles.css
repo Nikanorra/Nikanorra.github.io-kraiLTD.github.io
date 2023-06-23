@@ -343,13 +343,13 @@ img {
 }
 
 .title {
-  font-size: calc(25px + 1.3020833333vw);
+  font-size: calc(40px + 1.3020833333vw);
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .description {
-  font-size: calc(15px + 0.5208333333vw);
+  font-size: calc(20px + 0.5208333333vw);
 }
 
 .btn.btn-primary.btn-lg {
@@ -496,13 +496,15 @@ header .logo {
   background: #273747;
   position: absolute;
   z-index: 2;
-  bottom: 70px;
-  right: 20%;
+  bottom: 2%;
+  left: 50%;
 }
 
 .mission .mission_pic img {
-  height: 400px;
-  width: 400px;
+  height: calc(260px + 10.4166666667vw);
+  width: calc(260px + 10.4166666667vw);
+  max-width: 550px;
+  max-height: 550px;
   z-index: 1;
   position: absolute;
   top: 50px;
@@ -773,7 +775,7 @@ header .logo {
 }
 
 .news_wrapp button:hover {
-  font-size: calc(15px + 0.5208333333vw);
+  font-size: calc(20px + 0.5208333333vw);
   padding: 5px 20px;
 }
 
@@ -873,10 +875,6 @@ footer .footer__contact svg {
 }
 
 @media screen and (max-width: 992px) {
-  .mission .mission_pic {
-    height: 450px;
-  }
-
   .mission .mission_text .description a {
     margin: 30px 0 0;
     text-align: center;
@@ -885,19 +883,23 @@ footer .footer__contact svg {
   .mission .mission_pic::before {
     width: 250px;
     height: 200px;
-    top: 100px;
+    top: 8%;
     left: 25px;
   }
 
+  .mission .mission_pic {
+    width: 300px;
+    height: 300px;
+  }
+
   .mission .mission_pic img {
-    top: 120px;
-    height: 260px;
-    width: 260px;
+    height: 280px;
+    width: 280px;
   }
 
   .mission .mission_pic::after {
-    bottom: 65px;
-    right: 0;
+    left: 35%;
+    top: 70%;
     width: 70%;
     max-width: 250px;
     height: 30px;
@@ -945,13 +947,25 @@ footer .footer__contact svg {
 }
 
 @media screen and (max-width: 768px) {
-  .mission .mission_pic::before {
-    left: 0;
+  .mission .mission_pic {
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
   }
 
   .mission .mission_pic img {
-    left: 35px;
-    top: 130px;
+    top: 120px;
+    height: 320px;
+    width: 320px;
+  }
+
+  .mission .mission_pic::after {
+    left: 35%;
+    top: 70%;
+    width: 70%;
+    max-width: 250px;
+    height: 30px;
+    font-size: calc(12px + 0.2083333333vw);
   }
 
   .services_points {
@@ -1006,5 +1020,18 @@ footer .footer__contact svg {
   .news_wrapp button {
     width: 90%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mission .mission_pic {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .mission .mission_pic img {
+    top: 120px;
+    height: 250px;
+    width: 250px;
   }
 }
