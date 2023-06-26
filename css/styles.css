@@ -763,20 +763,29 @@ header .logo {
   height: 30px;
 }
 
-.news_wrapp button {
+.news_wrapp .news_details p a {
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.news_wrapp .news_details p a:hover {
+  color: #19B1DE;
+}
+
+.news_wrapp .news_btn {
   background-color: #19B1DE;
   border-radius: 20px;
   padding: 10px 20px;
-  height: 50px;
   width: 200px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 
-.news_wrapp button:hover {
-  font-size: calc(20px + 0.5208333333vw);
-  padding: 5px 20px;
+.news_wrapp .news_btn:hover {
+  font-weight: 900;
 }
 
 /*
@@ -1017,7 +1026,7 @@ footer .footer__contact svg {
     width: 100%;
   }
 
-  .news_wrapp button {
+  .news_wrapp .news_btn {
     width: 90%;
     margin: 0 auto;
   }
