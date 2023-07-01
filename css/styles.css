@@ -467,6 +467,11 @@ header .logo {
   padding: 1rem 2rem;
 }
 
+.hero_slider {
+  margin-top: 20px;
+  font-size: calc(12px + 0.5208333333vw);
+}
+
 .slider.center {
   background-color: #273747;
   height: 77px;
