@@ -1,58 +1,15 @@
 
-// let currentPage = document.location.href;
-// // let links = document.querySelectorAll('.navbar-nav a');
-
-// let el = document.querySelectorAll(".navbar-nav a");
-// window.addEventListener('load', () => {
-//   for (var i = 0; i < el.length; i++) {
-//     // debugger;
-//     if (el[i].getAttribute("href").indexOf(currentPage) > -1) {
-//       debugger;
-//       console.log(el[i]);
-//       el[i].classList.add("active");
-//       debugger;
-//     }
-//   }
-// });
-
 jQuery(function($) {
   var path = window.location.href; 
   var valueBeforeHash = path.split('#')[0];
-  // because the 'href' property of the DOM element is the absolute path
   $('ul a').each(function() {
-
-    // $(this).removeClass('active');
- 
     let newHref = this.href.split('#')[0];
     if (newHref === valueBeforeHash) {
-      // debugger;
+      debugger;
       $(this).addClass('active');
-    } 
-    // else {
-    //   alert(newHref);
-    // }
+    }
   });
 });
-
-
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   debugger;
-//   var currentPage = window.location.pathname;
-//   var links = document.querySelectorAll('.navbar-nav .nav-link');
-
-//   for (var i = 0; i < links.length; i++) {
-//     var link = links[i];
-//     var href = link.getAttribute('href');
-
-//     if (href === currentPage) {
-//       link.classList.add('active');
-//       break;
-//     }
-//   }
-// });
-
 
 ;
 /*
