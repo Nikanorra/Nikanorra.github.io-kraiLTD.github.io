@@ -813,7 +813,6 @@ header .logo {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   line-height: 1.3em;
-  height: 3.9em;
 }
 
 .news_wrapp .news_details p:first-child {
@@ -829,6 +828,15 @@ header .logo {
 
 .news_wrapp .news_details p a:hover {
   color: #19B1DE;
+}
+
+.news_wrapp .news_details .news_date {
+  font-size: calc(12px + 0.2083333333vw);
+  opacity: 0.5;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  height: auto;
+  font-style: italic;
 }
 
 .news_wrapp .news_btn {
